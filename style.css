@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 35%;
+    height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position:left top;
+    position: fixed;
+    overflow: auto;
+}
+.conteudo-header{
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 33%;
+}
+.conteudo-header #avatar {
+    width: 40%;
+    margin-left: 60%;
+    padding-top: 50px;
+}
+.conteudo-header #avatar img {
+    border-radius: 50%;
+    width: 100%;
+}
+.texto-header{
+    text-align: end;
+    padding: 15px 0;
+    margin-top: 10px;    
+}
+.texto-header h2{
+    font-size: 1.4em;
+    color: #666;
+    font-weight: 100;
+}
+.texto-header span{
+    color: white;
+}
+.texto-header p {
+    margin-top: 20px;
+    color: rgb(77, 77, 77);
+}
+.texto-header a{
+    color: rgb(77, 77, 77);    
+}
+main{
+    width: 65%;
+    margin-left: 35%;
+}
+.padrao{
+    width: 90%;
+    margin: auto;
+    color: #666;
+}
+article h1{
+    color:#666;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding-top: 80px;
+}
+article p {
+    color: #666;
+    padding-top: 10px;
+    font-size: .9em;
+    margin-bottom: 30px;
+}
+.button-default{
+    color: #666;    
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: .9em;
+    transition: .4s;
+}
+.button-white{
+    color: #666;
+    border: 1px solid #666;
+    
+}
+.button-green{
+    border: none;
+    color: white;
+    background-color: rgb(78, 189, 133); 
+}
+.button-green:hover{
+    color: #666;
+    background-color: white;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+.button-white:hover{
+    color: white;
+    background-color: rgb(78, 189, 133);
+    border: none;
+    cursor: pointer;
+}
+#recent{
+    padding-top:30px;
+    font-weight: 200;
+}
+.cards-container{
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 45%;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.contato{
+    padding: 20px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contato h3{
+    font-weight: 300;
+}
+.contato p {
+    margin-top: 10px;
+}
+
+form{
+    padding:20px 0;
+    width: 65%; 
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.label-fix{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 5%;               
+}
+label{
+    font-size: .9em;
+    margin-bottom: 5px;
+}
+input{
+    padding: 10px;
+    background-color: rgb(182, 182, 182);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+textarea{
+    background-color: rgb(182, 182, 182);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+address{
+    width: 35%;
+   font-size: .8em; 
+   margin-top: 20px;
+}
+address p{
+    margin-bottom: 20px;
+}
+.elements h3{
+    font-weight: 300;
+    padding: 10px 0 ;
+    margin-bottom: 10px;
+}
+.elements h4{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.elements p {
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+.elements-2 > h1{
+    padding:20px 0;
+}
+.listas{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.listas h3{
+    font-weight: 300;
+    margin: 20px 0;
+}
+.listas ul{
+    margin: 20px 0;
+    list-style-position: inside;
+}
+.listas ol{
+    margin:20px 0;
+    list-style-position: inside;
+}
+#alternate{
+    list-style: none;    
+}
+.listinhas{    
+    width: 50%;
+}
+.icons li{
+    list-style-type: none;
+    color:rgb(78, 189, 133) ;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 10px;
+}
+.button-big{
+    padding: 10px 150px;
+}
+.button-small{
+    padding:5px 5px;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;   
+    flex-wrap: wrap; 
+}
+.def{
+    align-self: flex-start;
+}
+.big{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+thead{
+    background-color: rgb(129, 129, 129);
+    color: rgb(61, 61, 61);    
+}
+table tr{
+    padding: 10px;
+}
+table td{
+    text-align: left;
+    padding: 10px;
+}
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+.table-def{
+    border-top: 2px solid #666;
+}
+tfoot th{
+    text-align: right;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.b1, .b2, .b3, .b4, .b5{
+    margin: 20px 0;
+}
+.b3{
+    display: flex;
+    flex-direction: column;
+}
+.b4{
+    display: flex;
+    flex-direction: column;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.forms form{
+    display: flex;
+    flex-direction: column;
+}
+.inpt-radio{
+    display: flex;    
+}
+.inpt-radio input{
+    margin-right: 5px;
+}
+.formulario-hero{
+    width: 100%;
+}
+.formulario-hero select{
+    background-color: #B6B6B6;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img-card{
+    width: 32%;
+    margin-bottom: 10px;
+}
+.img-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.left-right p{
+    margin-bottom: 15px;
+    font-size: .8em;
+}
+footer{
+    margin-top: 57%;
+    margin-left: 25%;
+}
+footer ul{
+    margin-left: 55%;
+    
+}
+footer ul li{    
+    margin-right: 5px;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.397);
+}
+footer p{
+    color: rgba(255, 255, 255, 0.397);   
+    font-size: .9em; 
+}
+footer a{
+    color: rgba(255, 255, 255, 0.397);
+}
+
+@media (max-width:855px){
+    
+    .def,.big{
+        align-self: flex-start;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:600px){
+    .contato{
+        flex-direction: column;
+    }
+    .button-big{
+        padding: 10px 20vw;
+    }
+}
+
+@media (max-width:330px){
+    .conteudo-header #avatar{
+        margin:0;
+        padding: 0;
+    }
+    footer{
+        margin-top: 0;
+    }
+    .texto-header h2{
+        font-size: .7em;
+    }
+    .conteudo-header{
+        margin-left: 0;
+    }
+    .texto-header{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 100%;
+    }
+}
